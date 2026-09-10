@@ -1,5 +1,5 @@
 import './EnglishAcademy.css'
-import heroImage from './assets/academy-hero.jpg'
+import heroImage from './assets/academy-hero-optimized.jpg'
 
 function EnglishAcademy() {
 

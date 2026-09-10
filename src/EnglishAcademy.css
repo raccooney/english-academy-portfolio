@@ -1,0 +1,326 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+     margin: 0;
+     background-color: white;
+     color: #222;
+}
+
+section[id] {
+    scroll-margin-top: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    color: #222;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: whitesmoke;
+}
+
+.hero {
+    text-align: center;
+    padding: 140px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: whitesmoke;
+}
+
+.hero a {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero a:hover {
+    background-color: #555;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.about-text {
+    text-align: left;
+}
+
+.about p {
+    max-width: 650px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.teachers {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.teachers h2 {
+    color: #333;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.teacher-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.teacher-card {
+    width: 220px;
+    padding: 24px;
+    border: 1px solid #999;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.teacher-card h3 {
+    margin-bottom: 8px;
+}
+
+.teacher-card p {
+    line-height: 1.6;
+}
+
+.curriculum {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.curriculum h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.curriculum-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.curriculum-card {
+    width: 300px;
+    padding: 14px;
+    border: 1px solid #999;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.curriculum-card:hover {
+    transform: translateY(-5px);
+}
+
+.reviews {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.review-card {
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.review-stars {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.review-card h3 {
+    margin-bottom: 12px;
+}
+
+.review-content {
+    line-height: 1.7;
+    color: #444;
+}
+
+.review-name {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #777;
+}
+
+.contact {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #333;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.contact p {
+    margin-bottom: 12px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.contact a:hover {
+    color: #555;
+}
+
+.contact button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #999;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 12px;
+        max-width: 320px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .teacher-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teacher-card, 
+    .curriculum-card, 
+    .review-card {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+
+    .curriculum-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-list {
+        align-items: center;
+    }
+
+}
+
+.about,
+.curriculum,
+.contact {
+    background-color: #f7f7f7;
+}
+
+.teacher-card,
+.curriculum-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.teacher-card:hover,
+.curriculum-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
